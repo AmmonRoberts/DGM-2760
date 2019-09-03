@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Joe's Bed and Breakfast</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 id="companyName"></h1>
+        <h2 id="companySlogan"></h2>
+    </header>
+    <main>
+        <section id="pageName"></section>
+        <br>
+        <h3 id="greeting"></h3>
+        <h2>
+            Today is
+            <script>
+                let date = new Date()
+                document.write(date.toLocaleDateString());
+            </script>
+        </h2>
+        <br>
+        <h2>What I learned:</h2>
+        <ul class="objectives">
+            <li>How to dynamically insert the date into the page</li>
+            <li>How awesome Netlify is</li>
+            <li>That I can commit directly from VS Code...</li>
+            <li>How hard it is to pick a background photo</li>
+        </ul>
+
+
+    </main>
+    <footer>
+        <br>
+        <p>Ammon Roberts</p>
+        <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by rawpixel.com -
+            www.freepik.com</a>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

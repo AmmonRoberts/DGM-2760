@@ -1,0 +1,9 @@
+header {
+    background-image: url("../images/header.jpg");
+    max-width: 960px;
+    min-height: 200px;
+}
+
+body {
+    background-color: rgb(245, 255, 254);
+}
