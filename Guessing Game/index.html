@@ -29,29 +29,30 @@
         <p>You will receive a reward based on how many guesses it takes you to guess the number correctly</p>
         <p>Refresh the page to reset your rewards</p>
 
-        <div>
-            <div class="a1">
+        <div class="row">
+            <div>
                 <h2>Play</h2>
                 <input id="guess" type="number" placeholder="number" />
                 <button id="guessButton" onclick="evaluateGuess()">Guess</button>
                 <button id="newGameButton" disabled="" onclick="startGame()">New Game</button>
             </div>
 
-            <div class="a2">
+            <div class="column" id="leftSide">
                 <h2>Tries</h2>
                 <div id="attempts"></div>
             </div>
 
-            <div class="a3">
+            <div class="column" id="rightSide">
                 <h2>Feedback</h2>
                 <div id="feedback"></div>
             </div>
 
-            <div class="a4">
-                <h2>Award</h2>
-                <div id="award"></div>
-            </div>
 
+
+        </div>
+        <div class="row" id="leftSide">
+            <h2>Award</h2>
+            <div id="award"></div>
         </div>
     </main>
     <footer>
