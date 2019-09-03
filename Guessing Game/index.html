@@ -10,6 +10,7 @@
 <body>
     <header>
         <h1 id="assignmentName"></h1>
+        <h2 id="slogan"></h2>
     </header>
     <main>
         <h1></h1>
@@ -26,30 +27,32 @@
         <h2>Instructions</h2>
         <P>Guess a number between 1 and 15</P>
         <p>You will receive a reward based on how many guesses it takes you to guess the number correctly</p>
-        <p>Refresh the page to play again</p>
+        <p>Refresh the page to reset your rewards</p>
 
-        <div class="a1">
-            <h2>Play</h2>
-            <input id="guess" type="number" placeholder="number" />
-            <button id="guessButton" onclick="evaluateGuess()">Guess</button>
-            <button id="newGameButton" disabled="" onclick="startGame()">New Game</button>
+        <div>
+            <div class="a1">
+                <h2>Play</h2>
+                <input id="guess" type="number" placeholder="number" />
+                <button id="guessButton" onclick="evaluateGuess()">Guess</button>
+                <button id="newGameButton" disabled="" onclick="startGame()">New Game</button>
+            </div>
+
+            <div class="a2">
+                <h2>Tries</h2>
+                <div id="attempts"></div>
+            </div>
+
+            <div class="a3">
+                <h2>Feedback</h2>
+                <div id="feedback"></div>
+            </div>
+
+            <div class="a4">
+                <h2>Award</h2>
+                <div id="award"></div>
+            </div>
+
         </div>
-
-        <div class="a2">
-            <h2>Tries</h2>
-            <div id="attempts"></div>
-        </div>
-
-        <div class="a3">
-            <h2>Feedback</h2>
-            <div id="feedback"></div>
-        </div>
-
-        <div class="a4">
-            <h2>Award</h2>
-            <div id="award"></div>
-        </div>
-
     </main>
     <footer>
         <br>

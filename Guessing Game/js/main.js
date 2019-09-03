@@ -4,6 +4,7 @@ let totalGuesses;
 let guess;
 
 document.querySelector('#assignmentName').innerText = 'Guessing Game';
+document.querySelector('#slogan').innerText = 'Test your guessing skills!';
 
 function startGame() {
     totalGuesses = 0;
