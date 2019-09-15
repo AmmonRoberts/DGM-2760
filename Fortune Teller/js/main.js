@@ -71,7 +71,7 @@ function getFortune(fateNumber) {
             break;
 
         case 2:
-            message = 'learn something about frogs you never wanted to learn.';
+            message = 'learn something disturbing about a close friend.';
             break;
         case 3:
             message = 'die a horrible and painful death, from something you ate.';
