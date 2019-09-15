@@ -1,6 +1,6 @@
 img {
     max-width: 200px;
-    max-height: 200px
+    max-height: 200px;
 }
 
 header {
@@ -17,7 +17,7 @@ header>h1 {
 }
 
 body {
-    background-color: rgb(220, 223, 226)
+    background-color: rgb(220, 223, 226);
 }
 
 .column {
