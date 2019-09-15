@@ -79,7 +79,7 @@ function getFortune(fateNumber) {
             message = 'die a horrible and painful death from something you ate.';
             break;
         case 4:
-            message = 'learn a new skill';
+            message = 'learn a new skill.';
             break;
         case 5:
             message = 'find a new friend in the form of a friendly canine.';
