@@ -1,0 +1,21 @@
+header {
+    background-image: url("../images/header.jpg");
+    height: 500px;
+    min-width: 1920px;
+    min-height: 500px;
+    max-width: 1920px;
+    max-height: 500px;
+    color: black;
+    font-size: 20pt;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+
+#fortune {
+    font-size: 15pt;
+    font-style: italic;
+}
+
+body {
+    background-color: gray;
+}

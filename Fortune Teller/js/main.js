@@ -1,3 +1,6 @@
+document.querySelector('#assignmentName').innerText = 'Fortune Teller';
+document.querySelector('#slogan').innerText = 'Hear your fortune from an expert!';
+
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -13,7 +16,6 @@ function getMonthName(month) {
             break;
         case 2:
             name = 'February';
-
             break;
 
         case 3:
@@ -74,7 +76,7 @@ function getFortune(fateNumber) {
             message = 'learn something disturbing about a close friend.';
             break;
         case 3:
-            message = 'die a horrible and painful death, from something you ate.';
+            message = 'die a horrible and painful death from something you ate.';
             break;
         case 4:
             message = 'turn into a turkey pie';
@@ -88,12 +90,18 @@ function getFortune(fateNumber) {
     return message;
 }
 
-let day = getRandomIntInclusive(1, 30);
-let fate = getFortune(getRandomIntInclusive(1, 5));
-let month = (getRandomIntInclusive(1, 12));
-const monthName = getMonthName(month);
-console.log(monthName);
+function fortuneButton() {
 
-const fortune = `On ${monthName} ${day}, you will ${fate}`;
+    let day = getRandomIntInclusive(1, 30);
+    let fate = getFortune(getRandomIntInclusive(1, 5));
+    let month = (getRandomIntInclusive(1, 12));
+    const monthName = getMonthName(month);
+    console.log(monthName);
 
-document.querySelector('#fortune').innerText = fortune;
+    const fortune = `On ${monthName} ${day}, you will ${fate}`;
+    if (monthName == 'February' && day > 28) {
+        fortuneButton();
+    } else {
+        document.querySelector('#fortune').innerText = fortune;
+    }
+}
