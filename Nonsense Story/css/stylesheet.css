@@ -1,0 +1,34 @@
+header {
+    background-image: url("../images/header.jpg");
+    width: 1900px;
+    height: 300px;
+    color: black;
+    font-size: 20pt;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+span {
+    color: red;
+
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    position: fixed;
+    float: left;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
