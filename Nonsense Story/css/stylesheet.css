@@ -3,15 +3,18 @@ header {
     width: 1900px;
     height: 300px;
     color: black;
-    font-size: 20pt;
+    font-size: 25pt;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
+body {
+    background-color: rgb(255, 242, 208);
+}
+
 span {
     color: red;
-
 }
 
 .column {
@@ -26,7 +29,6 @@ span {
 }
 
 footer {
-    position: fixed;
     float: left;
     bottom: 0;
     width: 100%;
