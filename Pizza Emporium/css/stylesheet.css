@@ -1,0 +1,10 @@
+header {
+    background-image: url("../images/header.jpg");
+    width: 1900px;
+    height: 300px;
+    color: black;
+    font-size: 25pt;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
