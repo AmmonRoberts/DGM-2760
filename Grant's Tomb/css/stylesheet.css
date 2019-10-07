@@ -1,22 +1,19 @@
 header {
     background-image: url("../images/header.jpg");
     width: 1900px;
-    height: 250px;
+    height: 500px;
     color: white;
     font-size: 25pt;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    /* background-size: cover; */
+    background-position: left bottom;
 }
 
 body {
-    background-color: rgba(255, 235, 205, 0.815);
+    background-color: rgb(202, 199, 224);
 }
 
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 50%;
+.feedback {
+    font-size: 20pt;
+    color: blue;
 }
