@@ -13,7 +13,6 @@ const question = {
         document.querySelector('#answerTwo').textContent = question.option2;
         document.querySelector('#answerThree').textContent = question.option3;
         document.querySelector('#answerFour').textContent = question.option4;
-        console.log('farts');
     },
     check: (userChoice) => {
         if (userChoice === question.correct)
