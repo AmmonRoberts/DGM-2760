@@ -1,0 +1,134 @@
+header {
+    background-image: url("../images/header.jpg");
+    /* width: 1900px;*/
+    height: 200px;
+    /* color: white;
+    font-size: 25pt;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom; */
+}
+
+
+
+header,
+nav,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+body,
+h1,
+h2,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(202, 199, 224);
+}
+
+
+@media only screen and (min-width: 601px) {
+    div.smallMenuLink {
+        display: none;
+    }
+
+    nav#smallNavArea {
+        display: none;
+    }
+
+    ul#primaryNavigation {
+        margin-left: 2%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul#primaryNavigation li {
+        float: left;
+        border-right: solid 1px black;
+    }
+
+    nav ul#primaryNavigation li a {
+        display: block;
+        color: white;
+        font-size: 1em;
+        padding: 1.3em .9em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    nav ul#primaryNavigation li a:hover {
+        color: black;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    nav#smallNavArea {
+        display: block;
+    }
+
+    ul#primaryNavigation {
+        display: none;
+    }
+
+    nav#smallNavArea {
+        height: 100vh;
+        background-color: gray;
+    }
+
+    nav#smallNavArea ul {
+        padding: .5em 0
+    }
+
+    nav#smallNavArea ul li {
+        list-style: none;
+    }
+
+    nav#smallNavArea ul li a {
+        display: block;
+        list-style: none;
+        margin: .4em 2%;
+        padding: .6rem 0;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+
+    div.smallMenuLink a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: .6rem;
+    }
+}
+
+main h1 {
+    color: blue;
+    padding: 1rem 0 0 2%;
+}
+
+main h2 {
+    color: lightskyblue;
+    padding: .6re, 0 0 2%;
+}
+
+main p {
+    padding: .2rem 0 0 2%;
+    line-height: 150%;
+}
+
+main ul {
+    margin: 0;
+}
+
+main ul.objectives li {
+    margin-left: 3rem;
+}
