@@ -1,3 +1,11 @@
+header,
+nav,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 header {
     background-image: url("../images/header.jpg");
     /* width: 1900px;*/
@@ -9,16 +17,17 @@ header {
     background-position: left bottom; */
 }
 
-
-
-header,
-nav,
-main,
-footer {
-    max-width: 960px;
-    margin: 0 auto;
+header h1 {
+    padding: 1rem 0 0 2%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
 }
 
+header h2 {
+    padding: .5rem 0 0 2%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 32em;
+}
 
 body,
 h1,
@@ -33,7 +42,7 @@ body {
     background-color: rgb(202, 199, 224);
 }
 
-
+/* desktop */
 @media only screen and (min-width: 601px) {
     div.smallMenuLink {
         display: none;
@@ -57,7 +66,7 @@ body {
 
     nav ul#primaryNavigation li a {
         display: block;
-        color: white;
+        color: black;
         font-size: 1em;
         padding: 1.3em .9em;
         font-weight: bold;
@@ -69,6 +78,7 @@ body {
     }
 }
 
+/* mobile */
 @media only screen and (max-width:600px) {
     nav#smallNavArea {
         display: block;
@@ -100,6 +110,11 @@ body {
         text-decoration: none;
         color: white;
         background-color: black;
+    }
+
+    div.smallMenuLink {
+        display: block;
+        background-color: red;
     }
 
     div.smallMenuLink a {
