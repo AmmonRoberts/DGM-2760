@@ -1,16 +1,7 @@
 @charset "UTF-8";
 
-body,
-h1,
-h2,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: rgb(202, 199, 224);
+    background-color: rgba(30, 0, 255, 0.123);
 }
 
 header,
@@ -18,7 +9,7 @@ nav,
 main,
 footer {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 header {
@@ -43,10 +34,6 @@ header h2 {
     text-shadow: 2px 2px 5px black;
     font-size: 2rem;
 }
-
-
-
-
 
 /* desktop */
 @media only screen and (min-width: 601px) {
@@ -117,12 +104,12 @@ header h2 {
         text-align: center;
         text-decoration: none;
         color: white;
-        background-color: black;
+        background-color: rgb(65, 65, 65);
     }
 
     div.smallMenuLink {
         display: block;
-        background-color: red;
+        background-color: rgb(44, 150, 250);
     }
 
     div.smallMenuLink a {
@@ -134,13 +121,11 @@ header h2 {
 }
 
 main h1 {
-    color: blue;
-    padding: 1rem 0 0 2%;
+    color: rgb(243, 87, 87);
 }
 
 main h2 {
-    color: lightskyblue;
-    padding: .6rem, 0 0 2%;
+    color: rgb(128, 70, 146);
 }
 
 main p {
@@ -154,4 +139,8 @@ main ul {
 
 main ul.objectives li {
     margin-left: 3rem;
+}
+
+img {
+    width: 75%;
 }
