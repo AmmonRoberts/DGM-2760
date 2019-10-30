@@ -1,3 +1,18 @@
+@charset "UTF-8";
+
+body,
+h1,
+h2,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(202, 199, 224);
+}
+
 header,
 nav,
 main,
@@ -26,21 +41,12 @@ header h1 {
 header h2 {
     padding: .5rem 0 0 2%;
     text-shadow: 2px 2px 5px black;
-    font-size: 32em;
+    font-size: 2rem;
 }
 
-body,
-h1,
-h2,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    background-color: rgb(202, 199, 224);
-}
+
+
 
 /* desktop */
 @media only screen and (min-width: 601px) {
@@ -60,21 +66,23 @@ body {
     }
 
     nav ul#primaryNavigation li {
-        float: left;
+        display: inline-block;
         border-right: solid 1px black;
+        border-bottom: solid 1px black
     }
 
     nav ul#primaryNavigation li a {
         display: block;
         color: black;
         font-size: 1em;
-        padding: 1.3em .9em;
+        padding: 1.2em .9em;
         font-weight: bold;
         text-decoration: none;
+        list-style: none;
     }
 
     nav ul#primaryNavigation li a:hover {
-        color: black;
+        color: white;
     }
 }
 
@@ -94,7 +102,7 @@ body {
     }
 
     nav#smallNavArea ul {
-        padding: .5em 0
+        padding: .5em 0;
     }
 
     nav#smallNavArea ul li {
@@ -132,7 +140,7 @@ main h1 {
 
 main h2 {
     color: lightskyblue;
-    padding: .6re, 0 0 2%;
+    padding: .6rem, 0 0 2%;
 }
 
 main p {
