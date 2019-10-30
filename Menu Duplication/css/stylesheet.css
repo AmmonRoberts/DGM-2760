@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgba(30, 0, 255, 0.123);
+    background-color: rgb(238, 237, 243);
 }
 
 header,
 nav,
 main,
+body,
 footer {
     max-width: 960px;
     margin: 0;
@@ -50,6 +51,7 @@ header h2 {
         list-style: none;
         margin: 0;
         padding: 0;
+        background-color: rgb(139, 38, 38);
     }
 
     nav ul#primaryNavigation li {
@@ -60,7 +62,7 @@ header h2 {
 
     nav ul#primaryNavigation li a {
         display: block;
-        color: black;
+        color: white;
         font-size: 1em;
         padding: 1.2em .9em;
         font-weight: bold;
@@ -69,7 +71,7 @@ header h2 {
     }
 
     nav ul#primaryNavigation li a:hover {
-        color: white;
+        color: black;
     }
 }
 
@@ -125,7 +127,7 @@ main h1 {
 }
 
 main h2 {
-    color: rgb(128, 70, 146);
+    color: rgb(64, 26, 235);
 }
 
 main p {
