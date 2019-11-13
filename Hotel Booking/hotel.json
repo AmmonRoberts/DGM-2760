@@ -1,6 +1,6 @@
 {
     "hotels": [{
-            "name": "Marriot",
+            "name": "Marriott",
             "rooms": "10",
             "gym": "yes",
             "roomType": ["king", "mini", "double"],
