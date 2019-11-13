@@ -1,0 +1,29 @@
+{
+    "hotels": [{
+            "name": "Marriot",
+            "rooms": "10",
+            "gym": "yes",
+            "roomType": ["king", "mini", "double"],
+            "address": "1234 State St",
+            "picture": "room1.jpeg"
+        },
+
+        {
+            "name": "Hilton",
+            "rooms": "15",
+            "gym": "yes",
+            "roomType": ["king", "mini", "double", "penthouse"],
+            "address": "5678 Main St",
+            "picture": "room2.jpeg"
+        },
+
+        {
+            "name": "Comfort Inn",
+            "rooms": "5",
+            "gym": "no",
+            "roomType": ["mini", "double"],
+            "address": "11 Center St",
+            "picture": "room3.jpeg"
+        }
+    ]
+}
