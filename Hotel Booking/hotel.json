@@ -14,7 +14,7 @@
             "gym": "yes",
             "roomType": ["king", "mini", "double", "penthouse"],
             "address": "5678 Main St",
-            "picture": "room2.jpeg"
+            "picture": "room2.jpg"
         },
 
         {
