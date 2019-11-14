@@ -3,6 +3,7 @@ header {
     min-width: 1000px;
     height: 500px;
     color: black;
+    text-shadow: -2px -2px white;
     font-size: 20pt;
     background-repeat: no-repeat;
     background-size: cover;
