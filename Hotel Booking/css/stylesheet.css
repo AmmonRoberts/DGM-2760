@@ -1,7 +1,45 @@
-.hotels {
+.hotels li {
+    display: inline;
     list-style: none;
 }
 
 img {
     width: 25%;
+}
+
+a {
+    background-color: #4CAF50;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    color: white;
+    padding: 15px 32px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+}
+
+footer {
+    position: absolute;
+
+}
+
+header {
+    background-image: url("../images/header.jpg");
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: white;
+}
+
+header,
+main,
+body,
+footer {
+    max-width: 960px;
+    bottom: 1rem;
+    left: 1rem;
 }
