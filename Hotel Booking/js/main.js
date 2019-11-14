@@ -36,5 +36,5 @@ function hotelInfo(event) {
     document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`;
     document.querySelector('#gym').textContent = `${hotelChoice.gym}`;
     document.querySelector('#roomType').textContent = `${roomString}`;
-    document.querySelector('#picture').src = './images/hotelChoice.picture';
+    document.querySelector('#picture').src = `./images/${hotelChoice.picture}`;
 }
