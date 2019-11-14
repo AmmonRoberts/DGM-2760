@@ -5,7 +5,7 @@
             "gym": "yes",
             "roomType": ["king", "mini", "double"],
             "address": "1234 State St",
-            "picture": "room1.jpeg"
+            "picture": "room1.jpg"
         },
 
         {
@@ -23,7 +23,7 @@
             "gym": "no",
             "roomType": ["mini", "double"],
             "address": "11 Center St",
-            "picture": "room3.jpeg"
+            "picture": "room3.jpg"
         }
     ]
 }
