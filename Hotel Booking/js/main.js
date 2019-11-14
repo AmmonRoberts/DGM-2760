@@ -26,18 +26,23 @@ function hotelInfo(event) {
         return event.target.id === hotel.name.toLowerCase();
     })
 
-    let rooms = hotelChoice.roomType;
-    let roomString = '';
-    rooms.forEach(element => {
-        roomString += `${element}, `;
-    });
-    roomString = roomString.slice(0, -2);
+    if (document.querySelector('#details').style.display = 'none') {
+        let rooms = hotelChoice.roomType;
+        let roomString = '';
+        rooms.forEach(element => {
+            roomString += `${element}, `;
+        });
+        roomString = roomString.slice(0, -2);
 
-    document.querySelector('#hotelName').textContent = `${hotelChoice.name} Hotel`;
-    document.querySelector('#address').textContent = `${hotelChoice.address}`;
-    document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`;
-    document.querySelector('#gym').textContent = `${hotelChoice.gym}`;
-    document.querySelector('#roomType').textContent = `${roomString}`;
-    document.querySelector('#picture').src = `./images/${hotelChoice.picture}`;
-    document.querySelector('#details').style.display = 'block';
+        document.querySelector('#hotelName').textContent = `${hotelChoice.name} Hotel`;
+        document.querySelector('#address').textContent = `${hotelChoice.address}`;
+        document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`;
+        document.querySelector('#gym').textContent = `${hotelChoice.gym}`;
+        document.querySelector('#roomType').textContent = `${roomString}`;
+        document.querySelector('#picture').src = `./images/${hotelChoice.picture}`;
+        document.querySelector('#details').style.display = 'block';
+
+    } else {
+        document.querySelector('#details').style.display = 'none'
+    }
 }
