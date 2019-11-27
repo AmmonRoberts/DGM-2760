@@ -5,7 +5,7 @@ let category_id = 0;
 let flag = 0;
 
 async function getRandomTrivia() {
-    fetch('https://jservice.io/api/random/')
+    fetch('http://jservice.io/api/random/')
         .then(function (response) {
             return response.json();
         })
@@ -26,7 +26,7 @@ async function getRandomTrivia() {
 }
 
 async function getFromCategory() {
-    fetch(`https://jservice.io/api/random/?category_id=${category_id}`)
+    fetch(`http://jservice.io/api/random/?category_id=${category_id}`)
         .then(function (response) {
             return response.json();
         })
