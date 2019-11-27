@@ -49,5 +49,21 @@ footer {
 
 footer {
     position: absolute;
+}
 
+.form-inline input,
+select {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.form-inline button {
+    padding: 10px 20px;
+    background-color: rgb(165, 38, 55);
+    border: 1px solid black;
+    color: white;
+    border-radius: 25px;
 }

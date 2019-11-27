@@ -19,23 +19,33 @@
             <li>How to use an API</li>
         </ul>
 
-        <ul class="trivia">
-            <li><a href="#" id="randomQuestion">New question</a></li>
-            <!-- <li><a href="#" id="getQuestion">Show question</a></li> -->
-            <li><a href="#" id="getAnswer">Show answer</a></li>
-        </ul>
-        <ul class="trivia">
-            <li><a href="#" id="historyLesson">A History Lesson</a></li>
-            <!-- <li><a href="#" id="getQuestion">Show question</a></li> -->
-            <li><a href="#" id="humanBody">The Body Human</a></li>
-        </ul>
-        <br><br>
+
+
+        <form class="form-inline" action="/action_page.php">
+            <input type="text" id="searchText" placeholder="Search here" name="search">
+            <select id="options">
+                <option value="planets">Planets</option>
+                <option value="people">People</option>
+                <option value="species">Species</option>
+                <option value="films">Films</option>
+                <option value="vehicles">Vehicles</option>
+                <option value="starships">Starships</option>
+            </select>
+            <button type="button" id="search">Search!</button>
+            <!-- <button type="button" id="searchWookiee">Search, but in Wookiee!</button> -->
+        </form>
+
+
+
 
 
 
         <div id=category></div>
         <br>
         <div id=output></div>
+
+
+
 
 
     </main>
