@@ -3,7 +3,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.links li {
+.trivia li {
     display: inline;
     list-style: none;
 }
@@ -36,4 +36,18 @@ a {
 
 a:hover {
     background-color: rgb(0, 0, 0);
+}
+
+header,
+main,
+body,
+footer {
+    max-width: 960px;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+footer {
+    position: absolute;
+
 }
