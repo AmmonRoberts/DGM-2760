@@ -8,6 +8,7 @@ async function getRandomTrivia() {
             return response.json();
         })
         .then(function (data) {
+            //conditional stuff for categories
             question = data[0].question.charAt(0).toUpperCase() + data[0].question.slice(1);
             answer = data[0].answer.charAt(0).toUpperCase() + data[0].answer.slice(1);
             showQuestion();
@@ -22,7 +23,7 @@ async function getRandomTrivia() {
 
 }
 
-document.querySelector(`#newQuestion`).addEventListener('click', getRandomTrivia);
+document.querySelector(`#randomQuestion`).addEventListener('click', getRandomTrivia);
 document.querySelector(`#getAnswer`).addEventListener('click', showAnswer);
 
 function showQuestion() {
