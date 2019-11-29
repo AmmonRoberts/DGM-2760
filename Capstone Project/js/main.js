@@ -1,4 +1,3 @@
-//https://swapi.co/api/people/?search=r2
 //https://swapi.co/api/planets/?format=wookiee
 
 
@@ -22,10 +21,13 @@ async function search() {
                         <p>Population: ${data.results[0].population}</p>
                         <p>Surface water: ${data.results[0].surface_water}</p>
                         <p>Residents: ${data.results[0].residents}</p>
-                        <p>Learn more:<br><a href = "https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}">Search on Wookieepedia</a></p>
+                        <p>Learn more:</p>
                         `;
+                    let a = document.createElement('p');
+                    a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
+                    document.querySelector('#output').appendChild(a);
                     break;
-                case "people":
+                case 'people':
                     document.querySelector('#output').innerHTML =
                         `<p>Name: ${data.results[0].name}</p>
                         <p>Height: ${data.results[0].height}</p>
@@ -34,10 +36,13 @@ async function search() {
                         <p>Eye color: ${data.results[0].eye_color}</p>
                         <p>Hair color: ${data.results[0].hair_color}</p>
                         <p>Skin color: ${data.results[0].skin_color}</p>
-                        <p>Learn more:<br><a href = "https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}">Search on Wookieepedia</a></p>
+                        <p>Learn more:</p>
                         `;
+                    let a = document.createElement('p');
+                    a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
+                    document.querySelector('#output').appendChild(a);
                     break;
-                case "species":
+                case 'species':
                     document.querySelector('#output').innerHTML =
                         `<p>Name: ${data.results[0].name}</p>
                     <p>Classification: ${data.results[0].classification}</p>
@@ -47,21 +52,26 @@ async function search() {
                     <p>Eye colors: ${data.results[0].eye_colors}</p>
                     <p>Hair colors: ${data.results[0].hair_colors}</p>
                     <p>Language: ${data.results[0].language}</p>
-                    <p>Learn more:<br><a href = "https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}">Search on Wookieepedia</a></p>
+                    <p>Learn more:</p>
                     `;
-
+                    let a = document.createElement('p');
+                    a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
+                    document.querySelector('#output').appendChild(a);
                     break;
-                case "films":
+                case 'films':
                     document.querySelector('#output').innerHTML =
                         `<p>Title: ${data.results[0].title}</p>
                         <p>Epsiode: ${data.results[0].episode_id}</p>
                         <p>Director: ${data.results[0].director}</p>
                         <p>Producer: ${data.results[0].producer}</p>
                         <p>Release date: ${data.results[0].release_date}</p>
-                        <p>Learn more:<br><a href = "https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].title}">Search on Wookieepedia</a></p>
+                        <p>Learn more:</p>
                         `;
+                    let a = document.createElement('p');
+                    a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].title}'>Search on Wookieepedia</a>`;
+                    document.querySelector('#output').appendChild(a);
                     break;
-                case "vehicles":
+                case 'vehicles':
                     document.querySelector('#output').innerHTML =
                         `<p>Name: ${data.results[0].name}</p>
                         <p>Model: ${data.results[0].model}</p>
@@ -72,10 +82,13 @@ async function search() {
                         <p>Crew: ${data.results[0].crew}</p>
                         <p>Passengers: ${data.results[0].passengers}</p>
                         <p>Cost in credits: ${data.results[0].cost_in_credits}</p>
-                        <p>Learn more:<br><a href = "https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}">Search on Wookieepedia</a></p>
+                        <p>Learn more:</p>
                         `;
+                    let a = document.createElement('p');
+                    a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
+                    document.querySelector('#output').appendChild(a);
                     break;
-                case "starships":
+                case 'starships':
                     document.querySelector('#output').innerHTML =
                         `<p>Name: ${data.results[0].name}</p>
                         <p>Model: ${data.results[0].model}</p>
@@ -88,23 +101,16 @@ async function search() {
                         <p>Passengers: ${data.results[0].passengers}</p>
                         <p>Cargo capacity: ${data.results[0].cargo_capacity}</p>
                         <p>Cost in credits: ${data.results[0].cost_in_credits}</p>
-                        <p>Learn more:<br><a href = "https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}">Search on Wookieepedia</a></p>
+                        <p>Learn more:</p>
                         `;
+                    let a = document.createElement('p');
+                    a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
+                    document.querySelector('#output').appendChild(a);
                     break;
-
             }
-
-
-
-
-            // for (var key of Object.keys(data.results[0])) {
-            //     console.log(key + " -> " + data.results[0])
-            // }
-
-            // console.log(data.results[0].films);
         })
         .catch(function (err) {
-            console.log("Something went wrong!", err);
+            console.log('Something went wrong!', err);
             alert('Please double check your search query!');
         });
 }
@@ -127,7 +133,7 @@ async function search() {
 //             console.log(data);
 //         })
 //         .catch(function (err) {
-//             console.log("Something went wrong!", err);
+//             console.log('Something went wrong!', err);
 //             // alert('Please double check your search query!');
 //         });
 // }
@@ -138,18 +144,18 @@ document.querySelector(`#search`).addEventListener('click', search);
 // document.querySelector(`#searchWookiee`).addEventListener('click', searchWookiee);
 
 
-function searchWookie() {
+// function searchWookie() {
 
-}
+// }
 
-function showStuff() {
-    if (flag == 0) {
-        let p = document.createElement("p");
-        p.innerHTML = question;
-        document.querySelector('#category').appendChild(p);
-        p.innerHTML = answer;
-        document.querySelector('#output').appendChild(p);
-        flag = 1;
-    }
+// function showStuff() {
+//     if (flag == 0) {
+//         let p = document.createElement('p');
+//         p.innerHTML = question;
+//         document.querySelector('#category').appendChild(p);
+//         p.innerHTML = answer;
+//         document.querySelector('#output').appendChild(p);
+//         flag = 1;
+//     }
 
-}
+// }
