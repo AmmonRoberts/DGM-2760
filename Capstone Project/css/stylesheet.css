@@ -53,6 +53,8 @@ footer {
 
 #searchHistory {
     position: absolute;
+    bottom: 7rem;
+    left: 1rem;
 }
 
 .form-inline input,
