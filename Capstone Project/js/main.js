@@ -1,5 +1,4 @@
-//https://swapi.co/api/planets/?format=wookiee
-
+let searchHistory = [];
 
 async function search() {
     let query = document.querySelector('#searchText').value;
@@ -9,6 +8,7 @@ async function search() {
             return response.json();
         })
         .then(function (data) {
+            let a;
             switch (option) {
                 case 'planets':
                     document.querySelector('#output').innerHTML =
@@ -23,7 +23,7 @@ async function search() {
                         <p>Residents: ${data.results[0].residents}</p>
                         <p>Learn more:</p>
                         `;
-                    let a = document.createElement('p');
+                    a = document.createElement('p');
                     a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
                     document.querySelector('#output').appendChild(a);
                     break;
@@ -38,7 +38,7 @@ async function search() {
                         <p>Skin color: ${data.results[0].skin_color}</p>
                         <p>Learn more:</p>
                         `;
-                    let a = document.createElement('p');
+                    a = document.createElement('p');
                     a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
                     document.querySelector('#output').appendChild(a);
                     break;
@@ -54,7 +54,7 @@ async function search() {
                     <p>Language: ${data.results[0].language}</p>
                     <p>Learn more:</p>
                     `;
-                    let a = document.createElement('p');
+                    a = document.createElement('p');
                     a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
                     document.querySelector('#output').appendChild(a);
                     break;
@@ -67,7 +67,7 @@ async function search() {
                         <p>Release date: ${data.results[0].release_date}</p>
                         <p>Learn more:</p>
                         `;
-                    let a = document.createElement('p');
+                    a = document.createElement('p');
                     a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].title}'>Search on Wookieepedia</a>`;
                     document.querySelector('#output').appendChild(a);
                     break;
@@ -84,7 +84,7 @@ async function search() {
                         <p>Cost in credits: ${data.results[0].cost_in_credits}</p>
                         <p>Learn more:</p>
                         `;
-                    let a = document.createElement('p');
+                    a = document.createElement('p');
                     a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
                     document.querySelector('#output').appendChild(a);
                     break;
@@ -103,11 +103,20 @@ async function search() {
                         <p>Cost in credits: ${data.results[0].cost_in_credits}</p>
                         <p>Learn more:</p>
                         `;
-                    let a = document.createElement('p');
+                    a = document.createElement('p');
                     a.innerHTML = `<a href = 'https://starwars.fandom.com/wiki/Special:Search?query=${data.results[0].name}'>Search on Wookieepedia</a>`;
                     document.querySelector('#output').appendChild(a);
                     break;
             }
+            if (searchHistory.length < 10) {
+                searchHistory.push(query);
+                console.log(searchHistory);
+            } else if (searchHistory.length = 10) {
+                searchHistory.shift();
+                searchHistory.push(query);
+                console.log(searchHistory);
+            }
+            document.querySelector('#searchHistory').textContent = searchHistory;
         })
         .catch(function (err) {
             console.log('Something went wrong!', err);

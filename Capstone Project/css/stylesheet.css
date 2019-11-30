@@ -51,6 +51,10 @@ footer {
     position: absolute;
 }
 
+#searchHistory {
+    position: absolute;
+}
+
 .form-inline input,
 select {
     vertical-align: middle;
