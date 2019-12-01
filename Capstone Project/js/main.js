@@ -1,4 +1,4 @@
-let searchHistory = [];
+let historyString = '';
 
 async function search() {
     let query = document.querySelector('#searchText').value;
@@ -20,7 +20,6 @@ async function search() {
                         <p>Terrain: ${data.results[0].terrain}</p>
                         <p>Population: ${data.results[0].population}</p>
                         <p>Surface water: ${data.results[0].surface_water}</p>
-                        <p>Residents: ${data.results[0].residents}</p>
                         <p>Learn more:</p>
                         `;
                         appendLink(data.results[0].name)
@@ -96,17 +95,8 @@ async function search() {
                         appendLink(data.results[0].name)
                         break;
                 }
-                if (searchHistory.length < 10) {
-                    searchHistory.push(query);
-                } else if (searchHistory.length = 10) {
-                    searchHistory.shift();
-                    searchHistory.push(query);
-                }
-                let historyString = '';
-                searchHistory.forEach(s => {
-                    historyString += `${s}, `
-                });
-                historyString = historyString.slice(0, -2);
+
+                historyString += `[${query}, ${option}] `
                 document.querySelector('#historyString').innerHTML = historyString;
             })
             .catch((err) => {
@@ -117,11 +107,17 @@ async function search() {
 }
 
 document.querySelector(`#search`).addEventListener('click', search);
+document.querySelector(`#reset`).addEventListener('click', resetHistory);
 document.querySelector(`#searchText`).addEventListener('keypress', (e) => {
     if (e.keyCode === 13) {
         search();
     }
-});
+})
+
+function resetHistory() {
+    historyString = '';
+    document.querySelector('#historyString').innerHTML = historyString;
+}
 
 function appendLink(m) {
     let a = document.createElement('p');

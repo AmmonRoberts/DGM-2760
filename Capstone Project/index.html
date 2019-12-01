@@ -10,36 +10,43 @@
 
 <body>
     <header>
-        <h1>Trivia Stuff</h1>
+        <h1>Star Wars Trivia</h1>
     </header>
 
     <main>
-        <h2>What I learned</h2>
-        <ul>
-            <li>How to use an API</li>
-            <li>Some APIs are more difficult to use than others</li>
-        </ul>
+        <div id="left">
+            <h2>What I learned</h2>
+            <ul>
+                <li>How to use an API</li>
+                <li>Some APIs are more difficult to use than others</li>
+            </ul>
+            <br>
+            <h3>Instructions:</h3>
+            <p>Enter a search keyword or two, choose a category, and learn more about your favorite Star Wars films!</p>
+            <p>Your search histroy can be viewed at the bottom of the page.</p>
 
+            <div class="form-inline">
+                <input type="text" id="searchText" placeholder="Search here" name="search">
+                <select id="options">
+                    <option value="planets">Planets</option>
+                    <option value="people">People</option>
+                    <option value="species">Species</option>
+                    <option value="films">Films</option>
+                    <option value="vehicles">Vehicles</option>
+                    <option value="starships">Starships</option>
+                </select>
+                <button type="button" id="search">Search!</button>
+            </div>
 
-
-        <div class="form-inline">
-            <input type="text" id="searchText" placeholder="Search here" name="search">
-            <select id="options">
-                <option value="planets">Planets</option>
-                <option value="people">People</option>
-                <option value="species">Species</option>
-                <option value="films">Films</option>
-                <option value="vehicles">Vehicles</option>
-                <option value="starships">Starships</option>
-            </select>
-            <button type="button" id="search">Search!</button>
-            <!-- <button type="button" id="searchWookiee">Search, but in Wookiee!</button> -->
         </div>
+        <div id="right">
+            <h3>Search Results:</h3>
+            <div id=output></div>
 
-        <br>
-        <div id=output></div>
+        </div>
         <div id="searchHistory">
             <h3>Search history:</h3>
+            <button type="button" id="reset">Reset</button>
             <div id="historyString"></div>
         </div>
     </main>
